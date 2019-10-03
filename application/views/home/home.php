@@ -870,6 +870,6 @@
   	<!-- /section -->
 
     <?php $this->load->view('home/partial/footer') ?>
-    <?php $this->load->view('home/partial/jQuery') ?>
+    <?php $this->load->view('home/partial/jquery') ?>
   </body>
 </html>

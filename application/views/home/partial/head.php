@@ -19,7 +19,7 @@
 <link type="text/css" rel="stylesheet" href="<?php echo base_url('css/base/nouislider.min.css'); ?>" />
 
 <!-- Font Awesome Icon -->
-<link rel="stylesheet" href="<?php echo base_url('font/font-awesome.min.css'); ?>">
+<link rel="stylesheet" href="<?php echo base_url('fonts/font-awesome.min.css'); ?>">
 
 <!-- Custom stlylesheet -->
 <link type="text/css" rel="stylesheet" href="<?php echo base_url('css/base/style.css'); ?>" />
