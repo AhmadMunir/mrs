@@ -10,14 +10,14 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <?php $this->load->view('admin/partial/sidebar') ?>
-    
+
     <!-- Start Welcome area -->
     <div class="all-content-wrapper">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="logo-pro">
-                        <a href="index.html"><img class="main-logo" src="img/logo/logo.png" alt="" /></a>
+                        <a href="<?php echo base_url('merry') ?>"><img class="main-logo" src="<?php echo base_url(); ?>/img/admin/logo/logo.png" alt="" /></a>
                     </div>
                 </div>
             </div>
@@ -63,7 +63,7 @@
                                                             <li>
                                                                 <a href="#">
                                                                     <div class="message-img">
-                                                                        <img src="img/contact/1.jpg" alt="">
+                                                                        <img src="<?php echo base_url(); ?>/img/admin/contact/1.jpg" alt="">
                                                                     </div>
                                                                     <div class="message-content">
                                                                         <span class="message-date">16 Sept</span>
@@ -75,7 +75,7 @@
                                                             <li>
                                                                 <a href="#">
                                                                     <div class="message-img">
-                                                                        <img src="img/contact/4.jpg" alt="">
+                                                                        <img src="<?php echo base_url(); ?>/img/admin/contact/4.jpg" alt="">
                                                                     </div>
                                                                     <div class="message-content">
                                                                         <span class="message-date">16 Sept</span>
@@ -87,7 +87,7 @@
                                                             <li>
                                                                 <a href="#">
                                                                     <div class="message-img">
-                                                                        <img src="img/contact/3.jpg" alt="">
+                                                                        <img src="<?php echo base_url(); ?>/img/admin/contact/3.jpg" alt="">
                                                                     </div>
                                                                     <div class="message-content">
                                                                         <span class="message-date">16 Sept</span>
@@ -99,7 +99,7 @@
                                                             <li>
                                                                 <a href="#">
                                                                     <div class="message-img">
-                                                                        <img src="img/contact/2.jpg" alt="">
+                                                                        <img src="<?php echo base_url(); ?>/img/admin/contact/2.jpg" alt="">
                                                                     </div>
                                                                     <div class="message-content">
                                                                         <span class="message-date">16 Sept</span>
@@ -208,12 +208,12 @@
                                                         <div class="tab-content custom-bdr-nt">
                                                             <div id="Notes" class="tab-pane fade in active">
                                                                 <div class="notes-area-wrap">
-                                                                    
+
                                                                 </div>
                                                             </div>
                                                             <div id="Projects" class="tab-pane fade">
                                                                 <div class="projects-settings-wrap">
-                                                                    
+
                                                                 </div>
                                                             </div>
                                                             <div id="Settings" class="tab-pane fade">
@@ -703,7 +703,7 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                         <div class="single-new-trend mg-t-30">
-                            <a href="#"><img src="img/new-product/5.jpg" alt=""></a>
+                            <a href="#"><img src="<?php echo base_url(); ?>/img/admin/new-product/5.jpg" alt=""></a>
                             <div class="overlay-content">
                                 <a href="#">
                                     <h2>$280</h2>
@@ -734,7 +734,7 @@
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                         <div class="single-new-trend mg-t-30">
-                            <a href="#"><img src="img/new-product/6.jpg" alt=""></a>
+                            <a href="#"><img src="<?php echo base_url(); ?>/img/admin/new-product/6.jpg" alt=""></a>
                             <div class="overlay-content">
                                 <a href="#">
                                     <h2>$280</h2>
@@ -765,7 +765,7 @@
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                         <div class="single-new-trend mg-t-30">
-                            <a href="#"><img src="img/new-product/7.jpg" alt=""></a>
+                            <a href="#"><img src="<?php echo base_url(); ?>/img/admin/new-product/7.jpg" alt=""></a>
                             <div class="overlay-content">
                                 <a href="#">
                                     <h2>$280</h2>
@@ -796,7 +796,7 @@
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                         <div class="single-new-trend mg-t-30">
-                            <a href="#"><img src="img/new-product/5.jpg" alt=""></a>
+                            <a href="#"><img src="<?php echo base_url(); ?>/img/admin/new-product/5.jpg" alt=""></a>
                             <div class="overlay-content">
                                 <a href="#">
                                     <h2>$280</h2>
@@ -902,7 +902,7 @@
                                     <h2>Jon Royita</h2>
                                     <p>Founder of Uttara It Park</p>
                                 </div>
-                                <img src="img/notification/5.jpg" class="img-circle circle-border m-b-md" alt="profile">
+                                <img src="<?php echo base_url(); ?>/img/admin/notification/5.jpg" class="img-circle circle-border m-b-md" alt="profile">
                                 <div class="social-widget-result">
                                     <span>100 Tweets</span> |
                                     <span>350 Following</span> |
@@ -923,7 +923,7 @@
                         <div class="author-widgets-single res-mg-t-30">
                             <div class="author-wiget-inner">
                                 <div class="perso-img">
-                                    <img src="img/notification/6.jpg" class="img-circle circle-border m-b-md" alt="profile">
+                                    <img src="<?php echo base_url(); ?>/img/admin/notification/6.jpg" class="img-circle circle-border m-b-md" alt="profile">
                                 </div>
                                 <div class="persoanl-widget-hd persoanl1-widget-hd">
                                     <h2>Fire Foxy</h2>
@@ -952,7 +952,7 @@
                                     <h2>Jon Royita</h2>
                                     <p>Founder of Uttara It Park</p>
                                 </div>
-                                <img src="img/contact/2.jpg" class="img-circle circle-border m-b-md" alt="profile">
+                                <img src="<?php echo base_url(); ?>/img/admin/contact/2.jpg" class="img-circle circle-border m-b-md" alt="profile">
                                 <div class="social-widget-result">
                                     <span>100 Tweets</span> |
                                     <span>350 Following</span> |
@@ -998,56 +998,7 @@
 
     <!-- jquery
         ============================================ -->
-    <script src="js/vendor/jquery-1.11.3.min.js"></script>
-    <!-- bootstrap JS
-        ============================================ -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- wow JS
-        ============================================ -->
-    <script src="js/wow.min.js"></script>
-    <!-- price-slider JS
-        ============================================ -->
-    <script src="js/jquery-price-slider.js"></script>
-    <!-- meanmenu JS
-        ============================================ -->
-    <script src="js/jquery.meanmenu.js"></script>
-    <!-- owl.carousel JS
-        ============================================ -->
-    <script src="js/owl.carousel.min.js"></script>
-    <!-- sticky JS
-        ============================================ -->
-    <script src="js/jquery.sticky.js"></script>
-    <!-- scrollUp JS
-        ============================================ -->
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <!-- mCustomScrollbar JS
-        ============================================ -->
-    <script src="js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/scrollbar/mCustomScrollbar-active.js"></script>
-    <!-- metisMenu JS
-        ============================================ -->
-    <script src="js/metisMenu/metisMenu.min.js"></script>
-    <script src="js/metisMenu/metisMenu-active.js"></script>
-    <!-- morrisjs JS
-        ============================================ -->
-    <script src="js/morrisjs/raphael-min.js"></script>
-    <script src="js/morrisjs/morris.js"></script>
-    <script src="js/morrisjs/morris-active.js"></script>
-    <!-- morrisjs JS
-        ============================================ -->
-    <script src="js/sparkline/jquery.sparkline.min.js"></script>
-    <script src="js/sparkline/jquery.charts-sparkline.js"></script>
-    <!-- calendar JS
-        ============================================ -->
-    <script src="js/calendar/moment.min.js"></script>
-    <script src="js/calendar/fullcalendar.min.js"></script>
-    <script src="js/calendar/fullcalendar-active.js"></script>
-    <!-- plugins JS
-        ============================================ -->
-    <script src="js/plugins.js"></script>
-    <!-- main JS
-        ============================================ -->
-    <script src="js/main.js"></script>
+     <?php $this->load->view('admin/partial/jquery') ?>
 </body>
 
 </html>

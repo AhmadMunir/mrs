@@ -1,57 +1,57 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Dashboard V.1 | jeweler - Material Admin Template</title>
+    <title>Merry's Collecti</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon
 		============================================ -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url('img/admin/favicon.ico') ?>">
     <!-- Google Fonts
 		============================================ -->
     <link href="https://fonts.googleapis.com/css?family=Play:400,700" rel="stylesheet">
     <!-- Bootstrap CSS
 		============================================ -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo base_url('css/admin/bootstrap.min.css') ?>">
     <!-- Bootstrap CSS
 		============================================ -->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="<?php echo base_url('css/admin/font-awesome.min.css') ?>">
     <!-- owl.carousel CSS
 		============================================ -->
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.css">
-    <link rel="stylesheet" href="css/owl.transitions.css">
+    <link rel="stylesheet" href="<?php echo base_url('css/admin/owl.carousel.css') ?>">
+    <link rel="stylesheet" href="<?php echo base_url('css/admin/owl.theme.css') ?>">
+    <link rel="stylesheet" href="<?php echo base_url('css/admin/owl.transitions.css') ?>">
     <!-- animate CSS
 		============================================ -->
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="<?php echo base_url('css/admin/animate.css') ?>">
     <!-- normalize CSS
 		============================================ -->
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="<?php echo base_url('css/admin/normalize.css') ?>">
     <!-- meanmenu icon CSS
 		============================================ -->
-    <link rel="stylesheet" href="css/meanmenu.min.css">
+    <link rel="stylesheet" href="<?php echo base_url('css/admin/meanmenu.min.css') ?>">
     <!-- main CSS
 		============================================ -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="<?php echo base_url('css/admin/main.css') ?>">
     <!-- morrisjs CSS
 		============================================ -->
-    <link rel="stylesheet" href="css/morrisjs/morris.css">
+    <link rel="stylesheet" href="<?php echo base_url('css/admin/morrisjs/morris.css') ?>">
     <!-- mCustomScrollbar CSS
 		============================================ -->
-    <link rel="stylesheet" href="css/scrollbar/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="<?php echo base_url('css/admin/scrollbar/jquery.mCustomScrollbar.min.css') ?>">
     <!-- metisMenu CSS
 		============================================ -->
-    <link rel="stylesheet" href="css/metisMenu/metisMenu.min.css">
-    <link rel="stylesheet" href="css/metisMenu/metisMenu-vertical.css">
+    <link rel="stylesheet" href="<?php echo base_url('css/admin/metisMenu/metisMenu.min.css') ?>">
+    <link rel="stylesheet" href="<?php echo base_url('css/admin/metisMenu/metisMenu-vertical.css') ?>">
     <!-- calendar CSS
 		============================================ -->
-    <link rel="stylesheet" href="css/calendar/fullcalendar.min.css">
-    <link rel="stylesheet" href="css/calendar/fullcalendar.print.min.css">
+    <link rel="stylesheet" href="<?php echo base_url('css/admin/calendar/fullcalendar.min.css') ?>">
+    <link rel="stylesheet" href="<?php echo base_url('css/admin/calendar/fullcalendar.print.min.css') ?>">
     <!-- style CSS
 		============================================ -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="<?php echo base_url('css/style.css') ?>">
     <!-- responsive CSS
 		============================================ -->
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="<?php echo base_url('css/admin/responsive.css') ?>">
     <!-- modernizr JS
 		============================================ -->
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="<?php echo base_url('js/admin/vendor/modernizr-2.8.3.min.js') ?>"></script>
