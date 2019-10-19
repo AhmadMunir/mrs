@@ -9,20 +9,20 @@
 <link href="https://fonts.googleapis.com/css?family=Hind:400,700" rel="stylesheet">
 
 <!-- Bootstrap -->
-<link type="text/css" rel="stylesheet" href="<?php echo base_url('css/base/bootstrap.min.css'); ?>" />
+<link type="text/css" rel="stylesheet" href="<?php echo base_url('assets/css/base/bootstrap.min.css'); ?>" />
 
 <!-- Slick -->
-<link type="text/css" rel="stylesheet" href="<?php echo base_url('css/base/slick.css'); ?>" />
-<link type="text/css" rel="stylesheet" href="<?php echo base_url('css/base/slick-theme.css'); ?>" />
+<link type="text/css" rel="stylesheet" href="<?php echo base_url('assets/css/base/slick.css'); ?>" />
+<link type="text/css" rel="stylesheet" href="<?php echo base_url('assets/css/base/slick-theme.css'); ?>" />
 
 <!-- nouislider -->
-<link type="text/css" rel="stylesheet" href="<?php echo base_url('css/base/nouislider.min.css'); ?>" />
+<link type="text/css" rel="stylesheet" href="<?php echo base_url('assets/css/base/nouislider.min.css'); ?>" />
 
 <!-- Font Awesome Icon -->
-<link rel="stylesheet" href="<?php echo base_url('fonts/font-awesome.min.css'); ?>">
+<link rel="stylesheet" href="<?php echo base_url('assets/fonts/font-awesome.min.css'); ?>">
 
 <!-- Custom stlylesheet -->
-<link type="text/css" rel="stylesheet" href="<?php echo base_url('css/base/style.css'); ?>" />
+<link type="text/css" rel="stylesheet" href="<?php echo base_url('assets/css/base/style.css'); ?>" />
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
