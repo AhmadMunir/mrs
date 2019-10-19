@@ -61,138 +61,9 @@
             </div>
           </li>
           <li><a href="#">Men’s Clothing</a></li>
-          <li class="dropdown side-dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Phones & Accessories <i class="fa fa-angle-right"></i></a>
-            <div class="custom-menu">
-              <div class="row">
-                <div class="col-md-4">
-                  <ul class="list-links">
-                    <li>
-                      <h3 class="list-links-title">Categories</h3></li>
-                    <li><a href="#">Women’s Clothing</a></li>
-                    <li><a href="#">Men’s Clothing</a></li>
-                    <li><a href="#">Phones & Accessories</a></li>
-                    <li><a href="#">Jewelry & Watches</a></li>
-                    <li><a href="#">Bags & Shoes</a></li>
-                  </ul>
-                  <hr>
-                  <ul class="list-links">
-                    <li>
-                      <h3 class="list-links-title">Categories</h3></li>
-                    <li><a href="#">Women’s Clothing</a></li>
-                    <li><a href="#">Men’s Clothing</a></li>
-                    <li><a href="#">Phones & Accessories</a></li>
-                    <li><a href="#">Jewelry & Watches</a></li>
-                    <li><a href="#">Bags & Shoes</a></li>
-                  </ul>
-                  <hr class="hidden-md hidden-lg">
-                </div>
-                <div class="col-md-4">
-                  <ul class="list-links">
-                    <li>
-                      <h3 class="list-links-title">Categories</h3></li>
-                    <li><a href="#">Women’s Clothing</a></li>
-                    <li><a href="#">Men’s Clothing</a></li>
-                    <li><a href="#">Phones & Accessories</a></li>
-                    <li><a href="#">Jewelry & Watches</a></li>
-                    <li><a href="#">Bags & Shoes</a></li>
-                  </ul>
-                  <hr>
-                  <ul class="list-links">
-                    <li>
-                      <h3 class="list-links-title">Categories</h3></li>
-                    <li><a href="#">Women’s Clothing</a></li>
-                    <li><a href="#">Men’s Clothing</a></li>
-                    <li><a href="#">Phones & Accessories</a></li>
-                    <li><a href="#">Jewelry & Watches</a></li>
-                    <li><a href="#">Bags & Shoes</a></li>
-                  </ul>
-                </div>
-                <div class="col-md-4 hidden-sm hidden-xs">
-                  <a class="banner banner-2" href="#">
-                    <img src="./img/banner04.jpg" alt="">
-                    <div class="banner-caption">
-                      <h3 class="white-color">NEW<br>COLLECTION</h3>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li><a href="#">Computer & Office</a></li>
-          <li><a href="#">Consumer Electronics</a></li>
-          <li class="dropdown side-dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Jewelry & Watches <i class="fa fa-angle-right"></i></a>
-            <div class="custom-menu">
-              <div class="row">
-                <div class="col-md-4">
-                  <ul class="list-links">
-                    <li>
-                      <h3 class="list-links-title">Categories</h3></li>
-                    <li><a href="#">Women’s Clothing</a></li>
-                    <li><a href="#">Men’s Clothing</a></li>
-                    <li><a href="#">Phones & Accessories</a></li>
-                    <li><a href="#">Jewelry & Watches</a></li>
-                    <li><a href="#">Bags & Shoes</a></li>
-                  </ul>
-                  <hr>
-                  <ul class="list-links">
-                    <li>
-                      <h3 class="list-links-title">Categories</h3></li>
-                    <li><a href="#">Women’s Clothing</a></li>
-                    <li><a href="#">Men’s Clothing</a></li>
-                    <li><a href="#">Phones & Accessories</a></li>
-                    <li><a href="#">Jewelry & Watches</a></li>
-                    <li><a href="#">Bags & Shoes</a></li>
-                  </ul>
-                  <hr class="hidden-md hidden-lg">
-                </div>
-                <div class="col-md-4">
-                  <ul class="list-links">
-                    <li>
-                      <h3 class="list-links-title">Categories</h3></li>
-                    <li><a href="#">Women’s Clothing</a></li>
-                    <li><a href="#">Men’s Clothing</a></li>
-                    <li><a href="#">Phones & Accessories</a></li>
-                    <li><a href="#">Jewelry & Watches</a></li>
-                    <li><a href="#">Bags & Shoes</a></li>
-                  </ul>
-                  <hr>
-                  <ul class="list-links">
-                    <li>
-                      <h3 class="list-links-title">Categories</h3></li>
-                    <li><a href="#">Women’s Clothing</a></li>
-                    <li><a href="#">Men’s Clothing</a></li>
-                    <li><a href="#">Phones & Accessories</a></li>
-                    <li><a href="#">Jewelry & Watches</a></li>
-                    <li><a href="#">Bags & Shoes</a></li>
-                  </ul>
-                  <hr class="hidden-md hidden-lg">
-                </div>
-                <div class="col-md-4">
-                  <ul class="list-links">
-                    <li>
-                      <h3 class="list-links-title">Categories</h3></li>
-                    <li><a href="#">Women’s Clothing</a></li>
-                    <li><a href="#">Men’s Clothing</a></li>
-                    <li><a href="#">Phones & Accessories</a></li>
-                    <li><a href="#">Jewelry & Watches</a></li>
-                    <li><a href="#">Bags & Shoes</a></li>
-                  </ul>
-                  <hr>
-                  <ul class="list-links">
-                    <li>
-                      <h3 class="list-links-title">Categories</h3></li>
-                    <li><a href="#">Women’s Clothing</a></li>
-                    <li><a href="#">Men’s Clothing</a></li>
-                    <li><a href="#">Phones & Accessories</a></li>
-                    <li><a href="#">Jewelry & Watches</a></li>
-                    <li><a href="#">Bags & Shoes</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li><a href="#">Bags & Shoes</a></li>
+          <li><a href="#">Jackets</a></li>
+          <li><a href="#">Bags</a></li>
+          <li><a href="#">Shoes</a></li>
           <li><a href="#">View All</a></li>
         </ul>
       </div>
@@ -344,10 +215,10 @@
             </div>
           </li>
           <li><a href="#">Sales</a></li>
-          <li class="dropdown default-dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Pages <i class="fa fa-caret-down"></i></a>
+          <li class="dropdown default-dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">More <i class="fa fa-caret-down"></i></a>
             <ul class="custom-menu">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="products.html">Products</a></li>
+              <li><a href="index.html">Contact Us</a></li>
+              <li><a href="products.html">Testimony</a></li>
               <li><a href="product-page.html">Product Details</a></li>
               <li><a href="checkout.html">Checkout</a></li>
             </ul>

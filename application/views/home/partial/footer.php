@@ -14,7 +14,9 @@
           </div>
           <!-- /footer logo -->
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+          <p>
+
+​​Merry's Collection stood since 2002, our founders Mariyanto and Hans have brought this vision to life and work to the needs of the leather lovers worldwide. We have a team of professionals from the beginning to make jackets, leather bags, leather shoes and suits etc.</p>
 
           <!-- footer social -->
           <ul class="footer-social">
@@ -64,7 +66,9 @@
       <div class="col-md-3 col-sm-6 col-xs-6">
         <div class="footer">
           <h3 class="footer-header">Stay Connected</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+          <p>
+
+Please visit our website or go directly to our store!.​ You can also subscribe for get our news</p>
           <form>
             <div class="form-group">
               <input class="input" placeholder="Enter Email Address">
