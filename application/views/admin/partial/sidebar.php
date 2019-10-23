@@ -8,11 +8,11 @@
                 <nav class="sidebar-nav left-sidebar-menu-pro">
                     <ul class="metismenu" id="menu1">
                         <li class="active">
-                            <a class="has-arrow" href="index.html">
+                            <a class="has-arrow" href="#">
                                    <span class="mini-click-non">Input</span>
                                 </a>
                             <ul class="submenu-angle" aria-expanded="true">
-                                <li><a title="input kategori" href="admin/input_barang.php"> <span class="mini-sub-pro">Input Kategori</span></a></li>
+                                <li><a title="input kategori" href="<?php echo base_url('admin/kategori') ?>"> <span class="mini-sub-pro">Input Kategori</span></a></li>
                             </ul>
                             <ul class="submenu-angle" aria-expanded="true">
                                 <li><a title="input barang" href="input_barang.html"> <span class="mini-sub-pro">Input Barang</span></a></li>
