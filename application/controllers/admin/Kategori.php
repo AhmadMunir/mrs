@@ -6,7 +6,7 @@
   	public function __construct()
   	{
   		parent::__construct();
-  		$this->load->model("kategori_model");
+  		$this->load->model("admin/kategori_model");
   		$this->load->library('form_validation');
   	}
 

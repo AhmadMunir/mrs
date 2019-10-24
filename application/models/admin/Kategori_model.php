@@ -6,7 +6,6 @@ class Kategori_model extends CI_Model
 {
 	private $_table = "tabel_kategori";
 
-	public $id_kategori;
 	public $nama_kategori;
 
 	public function rules()
@@ -27,7 +26,7 @@ class Kategori_model extends CI_Model
 	{
 		$post = $this->input->post();
 		$this->nama_kategori = $post["nama_kategori"];
-		$this->db->insert($this->table,$this);
+		$this->db->insert($this->_table,$this);
 	}
 
 	public function update()
@@ -40,7 +39,7 @@ class Kategori_model extends CI_Model
 
 	public function delete($id)
 	{
-		return $this->db->delete($this->table, array("id_kategori"=>$id));
+		return $this->db->delete($this->_table, array("id_kategori" => $id));
 	}
 }
 ?>
