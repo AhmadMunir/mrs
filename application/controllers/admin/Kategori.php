@@ -43,7 +43,7 @@
   		$data["tabel_kategori"] = $kategori->getById($id);
   		if (!$data["tabel_kategori"]) show_404();
 
-  		$this->load->view("admin/kategori/edit/form",$data);
+  		$this->load->view("admin/kategori/edit_form",$data);
   	}
 
   	public function delete($id=null)

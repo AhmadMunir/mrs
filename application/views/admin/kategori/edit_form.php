@@ -28,12 +28,14 @@
                 <div class="row">
                     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
                       
-                      <form action="<?php base_url('admin/kategori/add') ?>" method="post" enctype="multipart/form-data">
+                      <form action="<?php base_url('admin/kategori/edit') ?>" method="post" enctype="multipart/form-data">
                         <br>
-                            <div class="form-group">
-                              <label for="nama_kategori">Masukkan Kategori</label>
+                            <input type="hidden" name="id" value="<?php echo $tabel_kategori->id_kategori?>"/>
 
-                              <input class="form-control <?php echo form_error('nama_kategori') ? 'is-invalid':'' ?>" type="text" name="nama_kategori" placeholder="Nama kategori" />
+                            <div class="form-group">
+                              <label for="nama_kategori">Edit Kategori</label>
+
+                              <input class="form-control <?php echo form_error('nama_kategori') ? 'is-invalid':'' ?>" type="text" name="nama_kategori" value="<?php echo $tabel_kategori->nama_kategori?>" />
                               <div class="invalid-feedback">
                                 <?php echo form_error('nama_kategori')?>
                               </div>

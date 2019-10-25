@@ -16,14 +16,28 @@
         <?php $this->load->view('admin/partial/header') ?>
 
         <div class="content">
+
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-11 col-md-11 col-sm-11 col-xs-12">
-                      
-                        <div class="card-header">
-                        <br>
-                          
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+                          <div class="col-lg-11 col-md-11 col-sm-11 col-xs-12" style="margin-bottom:3px;">
+                            <div class="admin-content analysis-progrebar-ctn res-mg-t-100">
                           <a href="<?php echo site_url('admin/kategori/add') ?>" class="btn btn-warning"> Add New </a>
+                        </div>
+                        </div>
+                  <br>
+                 <br>
+                    <div class="col-lg-11 col-md-11 col-sm-11 col-xs-12" style="margin-bottom:1px;">
+
+                      
+                        
+                        
+                          <br>
+                          <br>
+                          <div class="admin-content analysis-progrebar-ctn res-mg-t-100">
                           
                           <div class="table-responsive">
                             <table class="table table-hover" id="dataTable" width="100%" cellspacing="0">
@@ -54,13 +68,14 @@
                             </table>
                           </div>
                         
-                      </div>
+                     
                       
                     
                     </div>
                   </div>
                 </div>
-
+</div>
+</div>
               </div>
 
         
