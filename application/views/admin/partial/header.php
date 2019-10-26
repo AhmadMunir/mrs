@@ -166,12 +166,12 @@
                                                     <i class="fa fa-angle-down adminpro-icon adminpro-down-arrow"></i>
                                                 </a>
                                             <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
-                                                <li><a href="register.html"><span class="fa fa-home author-log-ic"></span>Register</a>
-                                                </li>
+                                                <!-- <li><a href="register.html"><span class="fa fa-home author-log-ic"></span>Register</a>
+                                                </li> -->
                                                 <li><a href="#"><span class="fa fa-user author-log-ic"></span>My Profile</a>
                                                 </li>
-                                                <li><a href="lock.html"><span class="fa fa-diamond author-log-ic"></span> Lock</a>
-                                                </li>
+                                                <!-- <li><a href="lock.html"><span class="fa fa-diamond author-log-ic"></span> Lock</a>
+                                                </li> -->
                                                 <li><a href="#"><span class="fa fa-cog author-log-ic"></span>Settings</a>
                                                 </li>
                                                 <li><a href="login.html"><span class="fa fa-lock author-log-ic"></span>Log In</a>
@@ -450,7 +450,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  
+
                 </div>
             </div>
         </div>
