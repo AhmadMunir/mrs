@@ -82,47 +82,30 @@
             <div class="col-md-6 col-md-6 col-sm-6 col-xs-12">
                 <div class="text-center custom-login">
                     <h3>Registration</h3>
-                    <p>Admin template with very clean and aesthetic style prepared for your next app. </p>
                 </div>
                 <div class="hpanel">
                     <div class="panel-body">
-                        <form action="#" id="loginForm">
+                        <form action="<?php echo base_url('Register/add'); ?>" id="loginForm" method="post">
                             <div class="row">
                                 <div class="form-group col-lg-12">
-                                    <label>Username</label>
-                                    <input class="form-control">
-                                </div>
-                                <div class="form-group col-lg-12">
-                                    <label>Password</label>
-                                    <input type="password" class="form-control">
+                                    <label>Name</label>
+                                    <input class="form-control" name="nama">
                                 </div>
                                 <div class="form-group col-lg-12">
                                     <label>Email Address</label>
-                                    <input class="form-control">
+                                    <input class="form-control" name="email">
+                                </div>
+                                <div class="form-group col-lg-12">
+                                    <label>Username</label>
+                                    <input class="form-control" name="username">
+                                </div>
+                                <div class="form-group col-lg-12">
+                                    <label>Password</label>
+                                    <input type="password" class="form-control" name="password">
                                 </div>
                                 <div class="form-group col-lg-12">
                                     <label>Phone number</label>
-                                    <input class="form-control">
-                                </div>
-                                <div class="form-group col-lg-12">
-                                    <label>Address</label>
-                                    <input class="form-control">
-                                </div>
-                                <div class="form-group col-lg-6">
-                                    <label>country</label>
-                                    <input class="form-control">
-                                </div>
-                                <div class="form-group col-lg-6">
-                                    <label>province</label>
-                                    <input class="form-control">
-                                </div>
-                                 <div class="form-group col-lg-6">
-                                    <label>city</label>
-                                    <input class="form-control">
-                                </div>
-                                 <div class="form-group col-lg-6">
-                                    <label>postal code</label>
-                                    <input class="form-control">
+                                    <input class="form-control" name="no_telp">
                                 </div>
                                 <div class="checkbox col-lg-12">
                                     <input type="checkbox" class="i-checks" checked> Sigh up for our newsletter
