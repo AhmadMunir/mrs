@@ -6,6 +6,7 @@ class Kategori_model extends CI_Model
 {
 	private $_table = "tabel_kategori";
 
+	public $id_kategori;
 	public $nama_kategori;
 
 	public function rules()
@@ -19,6 +20,7 @@ class Kategori_model extends CI_Model
 
 	public function getAll()
 	{
+		$this->db->order_by('nama_kategori', 'ASC');
 		return $this->db->get($this->_table)->result();
 	}
 
@@ -27,9 +29,12 @@ class Kategori_model extends CI_Model
 		return $this->db->get_where($this->_table, ["id_kategori" => $id])->row();
 	}
 
+	
+
 	public function save()
 	{
 		$post = $this->input->post();
+		
 		$this->nama_kategori = $post["nama_kategori"];
 		$this->db->insert($this->_table,$this);
 	}

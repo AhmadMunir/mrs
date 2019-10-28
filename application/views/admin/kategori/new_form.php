@@ -25,11 +25,24 @@
                 $this->session->flashdata('success'); ?>
               </div>
             <?php endif;?>
+            
+              <br>
+                  <br>
+                    <div class="col-lg-11 col-md-11 col-sm-11 col-xs-12" style="margin-bottom:1px;">
+
+                      
+                        
+                        
+                          <br>
+                          <br>
+                          <div class="admin-content analysis-progrebar-ctn res-mg-t-100">
+           
                 <div class="row">
                     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
                       
                       <form action="<?php base_url('admin/kategori/add') ?>" method="post" enctype="multipart/form-data">
                         <br>
+                                                   
                             <div class="form-group">
                               <label for="nama_kategori">Masukkan Kategori</label>
 
@@ -39,9 +52,13 @@
                               </div>
                             </div>
                             <input class="btn btn-success" type="submit" name="btn"value="Simpan">
+                            <a href="<?php echo site_url('admin/kategori') ?>" class="btn btn-primary">Back</a>
                           </form>
                           
+                          
 
+                        </div>
+                      </div>
 
                     </div>
                   </div>

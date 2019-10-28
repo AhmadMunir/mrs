@@ -14,7 +14,11 @@
   	{
   		$data["tabel_kategori"] = $this->kategori_model->getAll();
   		$this->load->view("admin/kategori/list",$data);
+
   	}
+
+
+
   	public function add()
   	{
   		$kategori = $this->kategori_model;
@@ -24,10 +28,16 @@
   		if ($validation->run()){
   			$kategori->save();
   			$this->session->set_flashdata('success','Berhasil Disimpan');
+        redirect(site_url('admin/kategori'));
   		}
+      else{
+        $this->session->set_flashdata('gagal','Coba lagi');
+        redirect(site_url('admin/new_form'));
+      }
 
   		$this->load->view("admin/kategori/new_form");
   	}
+    
   	public function edit($id = null)
   	{
   		if (!isset($id)) redirect('admin/kategori');
@@ -38,6 +48,10 @@
   		if ($validation->run()){
   			$kategori->update();
   			$this->session->set_flashdata('success','Berhasil Disimpan');
+          redirect(site_url('admin/kategori'));
+      }
+      else{
+        $this->session->set_flashdata('gagal','Coba lagi');
   		}
 
   		$data["tabel_kategori"] = $kategori->getById($id);

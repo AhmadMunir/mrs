@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 27, 2019 at 04:11 PM
+-- Generation Time: Oct 28, 2019 at 03:09 PM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 7.2.10
 
@@ -91,6 +91,17 @@ CREATE TABLE `tabel_kategori` (
   `id_kategori` int(5) NOT NULL,
   `nama_kategori` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tabel_kategori`
+--
+
+INSERT INTO `tabel_kategori` (`id_kategori`, `nama_kategori`) VALUES
+(2, 'sssssaaaaad'),
+(3, 'adaddda'),
+(4, 'faaafafa'),
+(5, 'iaooappap'),
+(6, 'lalalallalal');
 
 -- --------------------------------------------------------
 
@@ -216,7 +227,7 @@ ALTER TABLE `tabel_detai_transaksi`
 -- AUTO_INCREMENT for table `tabel_kategori`
 --
 ALTER TABLE `tabel_kategori`
-  MODIFY `id_kategori` int(5) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_kategori` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `tabel_transaksi`
