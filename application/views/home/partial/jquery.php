@@ -1,7 +1,10 @@
-<!-- jQuery Plugins -->
-<script src="<?php echo base_url('js/base/jquery.min.js') ?>"></script>
-<script src="<?php echo base_url('js/base/bootstrap.min.js') ?>"></script>
-<script src="<?php echo base_url('js/base/slick.min.js') ?>"></script>
-<script src="<?php echo base_url('js/base/nouislider.min.js') ?>"></script>
-<script src="<?php echo base_url('js/base/jquery.zoom.min.js') ?>"></script>
-<script src="<?php echo base_url('js/base/main.js') ?>"></script>
+<!-- jquery latest version -->
+<script src="<?php echo base_url('js/user/vendor/jquery-3.1.1.min.js'); ?>"></script>
+<!-- Bootstrap framework js -->
+<script src="<?php echo base_url('js/user/bootstrap.min.js') ?>"></script>
+<!-- Particles js -->
+<script src="<?php echo base_url('js/user/particles.js') ?>"></script>
+<!-- All js plugins included in this file. -->
+<script src="<?php echo base_url('js/user/plugins.js') ?>"></script>
+<!-- Main js file that contents all jQuery plugins activation. -->
+<script src="<?php echo base_url('js/user/main.js') ?>"></script>
