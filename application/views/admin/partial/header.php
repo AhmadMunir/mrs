@@ -174,7 +174,7 @@
                                                 </li> -->
                                                 <li><a href="#"><span class="fa fa-cog author-log-ic"></span>Settings</a>
                                                 </li>
-                                                <li><a href="login.html"><span class="fa fa-lock author-log-ic"></span>Log In</a>
+                                                <li><a href="login"><span class="fa fa-lock author-log-ic"></span>Log In</a>
                                                 </li>
                                             </ul>
                                         </li>
