@@ -154,7 +154,7 @@
                                         </ul>
                                     </li>
                                     <li><a href="my-account.html">my Acoount</a></li>
-                                    <li><a href="login.html">Register</a></li>
+                                    <li><a href="<?php echo base_url('user/login'); ?>">Register</a></li>
                                     <li><a href="contact.html">Contact Us</a></li>
                                 </ul>
                             </nav>
