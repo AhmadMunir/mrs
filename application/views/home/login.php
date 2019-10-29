@@ -16,42 +16,47 @@
         <!-- Start of header area -->
         <?php $this->load->view('home/partial/header') ?>
         <!-- End of header area -->
-        <!-- Start Breadcrumbs Area -->
-        <div class="breadcrumbs-area section-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="breadcrumbs text-center text-white">
-                            <h3 class="text-uppercase">Login / Register</h3>
-                            <ul class="breadcrumbs-list">
-                                <li>
-                                    <a href="index.html" title="Return to Home">Home</a>
-                                </li>
-                                <li>/</li>
-                                <li>Login / Register</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Of Breadcrumbs Area -->
         <!-- Start page content -->
+        <style>
+        /* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+    text-align: center;
+    background-color: #ccc;
+    border: 1px solid #ddd;
+}
+        </style>
         <section id="page-content" class="page-wrapper">
+          <?php if ($this->session->flashdata('success')): ?>
+            <div class="row row-centered">
+            <div class="alert alert-success col-md-6 col-centered" role="alert" a>
+              <?php echo $this->session->flashdata('success');?>
+            </div>
+          </div>
+          <?php  endif; ?>
             <!-- Start Wishlist Area -->
             <div class="login-section section-padding">
                 <div class="container">
+
                     <div class="row">
                         <div class="col-md-6">
                             <div class="registered-customers">
                                 <div class="section-title text-uppercase mb-40">
                                     <h4>REGISTERED CUSTOMERS</h4>
                                 </div>
-                                <form action="#">
+                                <form action="<?php echo base_url('Login/loginL'); ?>" id="loginForm" method="post">
                                     <div class="login-account p-30 box-shadow">
                                         <p>If you have an account with us, Please log in.</p>
-                                        <input type="text" placeholder="Email Address" name="name">
-                                        <input type="password" placeholder="Password" name="password">
+                                        <input type="text" placeholder="Username" required="" value="" name="usernameL" id="usernameL" class="form-control">
+                                        <input type="password" placeholder="Password" required="" value="" name="passwordL" id="passwordL" class="form-control">
                                         <p><small><a href="#">Forgot our password?</a></small></p>
                                         <button type="submit" class="submit-btn">login</button>
                                     </div>
@@ -63,50 +68,43 @@
                                 <div class="section-title text-uppercase mb-40">
                                     <h4>NEW CUSTOMERS</h4>
                                 </div>
-                                <form action="#">
+                                <form action="<?php echo base_url('Register/add'); ?>" id="loginForm" method="post"
+                                  name="register_form" onsubmit="return validasi_input(this)">
                                     <div class="login-account p-30 box-shadow">
                                         <div class="row">
+                                            <div class="col-sm-12">
+                                                <input type="text" class="form-control" name="nama" placeholder="Your Name" id="nama" required>
+                                                <p id="nama_message" class="pesan-confirm"></p>
+                                            </div>
+
+                                            <div class="col-sm-12">
+                                                <input type="text" class="form-control" name="email" placeholder="Your E-mail" id="email" onkeyup="checkEmail()" onchange="checkEmail()" required>
+                                                <p id="email_message" class="pesan-confirm"></p>
+                                            </div>
+                                          </div>
+                                            <div class="row">
+
+                                            <div class="col-sm-12">
+                                                <input type="text" class="form-control" name="username" placeholder="Your Username" id="username" onkeyup="checkUsername()" onchange="checkUsername()" required>
+                                                <p id="username_message" class="pesan-confirm"></p>
+                                            </div>
+
+                                            <div class="col-sm-12">
+                                              <input type="text" class="form-control" name="no_telp" placeholder="Your Phone" id="phone" required >
+                                              <span id="phone_message" class="pesan-confirm"></span>
+                                            </div>
+                                          </div>
+                                            <div class="row">
                                             <div class="col-sm-6">
-                                                <input type="text" placeholder="First Name">
+                                              <input type="password" class="form-control" id="password" name="password" placeholder="Your Password" onkeyup="checkPass()" required>
                                             </div>
                                             <div class="col-sm-6">
-                                                <input type="text" placeholder="last Name">
+                                              <input type="password" class="form-control" id="repassword" name="repassword" placeholder="Your Password Again" onkeyup="checkPass()" required>
                                             </div>
                                             <div class="col-sm-6">
-                                                <select class="custom-select">
-                                                    <option value="defalt">country</option>
-                                                    <option value="c-1">Australia</option>
-                                                    <option value="c-2">Bangladesh</option>
-                                                    <option value="c-3">Unitd States</option>
-                                                    <option value="c-4">Unitd Kingdom</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <select class="custom-select">
-                                                    <option value="defalt">State</option>
-                                                    <option value="c-1">Melbourne</option>
-                                                    <option value="c-2">Dhaka</option>
-                                                    <option value="c-3">New York</option>
-                                                    <option value="c-4">London</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <select class="custom-select">
-                                                    <option value="defalt">Town/City</option>
-                                                    <option value="c-1">Victoria</option>
-                                                    <option value="c-2">Chittagong</option>
-                                                    <option value="c-3">Boston</option>
-                                                    <option value="c-4">Cambridge</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <input type="text" placeholder="Phone here...">
+                                              <span id="message" class="pesan-confirm"></span>
                                             </div>
                                         </div>
-                                        <input type="text" placeholder="Company neme here...">
-                                        <input type="text" placeholder="Email address here...">
-                                        <input type="password" placeholder="Password">
-                                        <input type="password" placeholder="Confirm Password">
                                         <div class="checkbox">
                                             <label class="mr-10">
                                                 <small>
@@ -121,7 +119,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <button value="register" type="submit" class="submit-btn mt-20">Register</button>
+                                                <input value="register" id="tombol_daftar" name="tombol_daftar" type="submit" class="submit-btn mt-20" onclick="checkregister()">Register</button>
                                             </div>
                                             <div class="col-md-6">
                                                 <button type="reset" class="submit-btn mt-20">Clear</button>
