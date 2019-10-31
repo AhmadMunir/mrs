@@ -8,3 +8,4 @@
 <script src="<?php echo base_url('js/user/plugins.js') ?>"></script>
 <!-- Main js file that contents all jQuery plugins activation. -->
 <script src="<?php echo base_url('js/user/main.js') ?>"></script>
+<script type="text/javascript" src="<?php echo base_url('js//validasi.js') ?>"></script>

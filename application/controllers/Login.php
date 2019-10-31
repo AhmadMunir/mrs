@@ -27,25 +27,86 @@
         }
         $data_session = array(
           'nama' => $username,
+          'jabatan' => "admin",
           'status' => "login",
           'id' => $id
         );
         $this->session->set_userdata($data_session);
-        redirect(base_url('admin/home'));
+        // redirect(base_url('admin/home'));
+        echo $data_session['nama'];
+        echo $data_session['jabatan'];
+        echo $data_session['status'];
+        echo $data_session['id'];
       } elseif($cekuser > 0){
           foreach ($cekuser2 as $key) {
             $id_us = $key->id_user;
           }
           $data_session = array(
             'id' => $id_us,
+            'jabatan' => "user",
             'nama' => $username,
             'status' => "login",
           );
           $this->session->set_userdata($data_session);
-          redirect(base_url('user/home'));
+          // redirect(base_url('user/home'));
+          echo $data_session['nama'];
+          echo $data_session['jabatan'];
+          echo $data_session['status'];
+          echo $data_session['id'];
     }else {
-      $this->session->set_flashdata('gagal', 'Password dan Username Salah!');
-      redirect('Login');
+      // $this->session->set_flashdata('gagal', 'Password dan Username Salah!');
+      // redirect('Login');
+      echo "gagal";
+      }
+  	}
+
+    public function loginL()
+    {
+    	$username = $this->input->post('usernameL');
+    	$password = $this->input->post('passwordL');
+    	$where = array(
+        'username' => $username,
+        'password' => $password);
+    	  $cekadmin = $this->m_login->cek_user("tabel_admin", $where)->num_rows();
+    	  $cekadmin2 = $this->m_login->cek_user("tabel_admin", $where)->result();
+    	  $cekuser = $this->m_login->cek_user("tabel_user", $where)->num_rows();
+    	  $cekuser2 = $this->m_login->cek_user("tabel_user", $where)->result();
+    	  if($cekadmin > 0){
+        foreach ($cekadmin2 as $k) {
+          $id = $k->id_admin;
+        }
+        $data_session = array(
+          'nama' => $username,
+          'jabatan' => "admin",
+          'status' => "login",
+          'id' => $id
+        );
+        $this->session->set_userdata($data_session);
+        // redirect(base_url('admin/home'));
+        echo $data_session['nama'];
+        echo $data_session['jabatan'];
+        echo $data_session['status'];
+        echo $data_session['id'];
+      } elseif($cekuser > 0){
+          foreach ($cekuser2 as $key) {
+            $id_us = $key->id_user;
+          }
+          $data_session = array(
+            'id' => $id_us,
+            'jabatan' => "user",
+            'nama' => $username,
+            'status' => "login",
+          );
+          $this->session->set_userdata($data_session);
+          // redirect(base_url('user/home'));
+          echo $data_session['nama'];
+          echo $data_session['jabatan'];
+          echo $data_session['status'];
+          echo $data_session['id'];
+    }else {
+      // $this->session->set_flashdata('gagal', 'Password dan Username Salah!');
+      // redirect('Login');
+      echo "gagal";
       }
   	}
   	 function logout(){
