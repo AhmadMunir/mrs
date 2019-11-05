@@ -18,27 +18,17 @@
         <div class="content">
             <div class="container-fluid">
 
-              <?php if
-              ($this->session->flashdata('success')): ?>
-              <div class="alert alert-success" role="alert">
-                <?php echo 
-                $this->session->flashdata('success'); ?>
-              </div>
-            <?php endif;?>
+             
             
-              <br>
+           
+                <div class="row">
+                     <br>
                   <br>
                     <div class="col-lg-11 col-md-11 col-sm-11 col-xs-12" style="margin-bottom:1px;">
 
-                      
-                        
-                        
                           <br>
                           <br>
                           <div class="admin-content analysis-progrebar-ctn res-mg-t-100">
-           
-                <div class="row">
-                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
                       
                       <form action="<?php base_url('admin/kategori/add') ?>" method="post" enctype="multipart/form-data">
                         <br>
@@ -56,7 +46,6 @@
                           </form>
                           
                           
-
                         </div>
                       </div>
 

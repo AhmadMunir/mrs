@@ -15,7 +15,7 @@
                                 <li><a title="input kategori" href="<?php echo base_url('admin/kategori') ?>"> <span class="mini-sub-pro">Input Kategori</span></a></li>
                             </ul>
                             <ul class="submenu-angle" aria-expanded="true">
-                                <li><a title="input barang" href="input_barang.html"> <span class="mini-sub-pro">Input Barang</span></a></li>
+                                <li><a title="input barang" href="<?php echo base_url('admin/barang') ?>"> <span class="mini-sub-pro">Input Barang</span></a></li>
                             </ul>
                         </li>
                         <li>

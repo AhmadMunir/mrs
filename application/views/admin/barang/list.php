@@ -32,7 +32,7 @@
                  <br>
                           <div class="col-lg-11 col-md-11 col-sm-11 col-xs-12" style="margin-bottom:3px;">
                             <div class="admin-content analysis-progrebar-ctn res-mg-t-100">
-                          <a href="<?php echo site_url('admin/kategori/add') ?>" class="btn btn-warning"> Add New </a>
+                          <a href="<?php echo site_url('admin/barang/add') ?>" class="btn btn-warning"> Add New </a>
                         </div>
                         </div>
                   <br>
@@ -51,24 +51,40 @@
                               <thead>
                                 <tr>
                                   <th>No</th>
+                                  <th>Nama Barang</th>
                                   <th>Nama Kategori</th>
+                                  <th>Gambar</th>
+                                  <th>Harga</th>
+                                  <th>Stok</th>
                                   <th>Action</th>
                                 </tr>
                               </thead>
                               <tbody>
-                                <?php $i=1 ?>
-                                <?php foreach ($tabel_kategori as $kategori): ?>
-                                
+                                <?php $i=1?>
+                                <?php foreach ($tabel_barang as $barang): ?>
                                   <tr>
-                                    <td width="5">
+                                    <td width="10">
                                       <?php echo $i++?>
                                     </td>
                                     <td width="150">
-                                      <?php echo $kategori->nama_kategori ?>
+                                      <?php echo $barang->nama_barang ?>
                                     </td>
-                                    <td width="50">
-                                    <a href="<?php echo site_url('admin/kategori/edit/'.$kategori->id_kategori)?>" class="btn btn-info">Edit</a>
-                                    <a onclick="deleteConfirm('<?php echo site_url('admin/kategori/delete/'.$kategori->id_kategori)?>')"
+                                    <td width="150">
+                                      
+                                    </td>
+                                    <td width="150">
+                                      <img src="<?php echo base_url('upload/barang/'.$barang->gambar) ?>" style="width: 200px;height: 200px;" />
+                                    </td>
+                                    <td width="150">
+                                      <?php echo $barang->harga ?>
+                                    </td>
+                                    <td width="150">
+                                      
+                                    </td>
+
+                                    <td width="150">
+                                    <a href="<?php echo site_url('admin/barang/edit/'.$barang->id_barang)?>" class="btn btn-info">Edit</a>
+                                    <a onclick="deleteConfirm('<?php echo site_url('admin/barang/delete/'.$barang->id_barang)?>')"
                                     href="#!" class="btn btn-primary">Hapus</a>      
                                     </td>
                                   </tr>
