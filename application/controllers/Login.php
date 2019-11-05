@@ -99,10 +99,16 @@
           );
           $this->session->set_userdata($data_session);
           // redirect(base_url('user/home'));
-          echo $data_session['nama'];
-          echo $data_session['jabatan'];
-          echo $data_session['status'];
-          echo $data_session['id'];
+          // redirect($_SERVER['HTTP_REFERER']);
+          if($_SERVER['HTTP_REFERER']==base_url('user/login')){
+            redirect(base_url('home'));
+          }else {
+            redirect($_SERVER['HTTP_REFERER']);
+          }
+          // echo $data_session['nama'];
+          // echo $data_session['jabatan'];
+          // echo $data_session['status'];
+          // echo $data_session['id'];
     }else {
       // $this->session->set_flashdata('gagal', 'Password dan Username Salah!');
       // redirect('Login');

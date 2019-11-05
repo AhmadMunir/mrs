@@ -21,6 +21,13 @@
 <!-- User style -->
 <link rel="stylesheet" href="<?php echo base_url('css/user/custom.css') ?>">
 
+<!-- notifications CSS
+============================================ -->
+<link rel="stylesheet" href="<?php echo base_url() ?>css/general/notifications/Lobibox.min.css">
+<link rel="stylesheet" href="<?php echo base_url() ?>css/general/notifications/notifications.css">
+
 
 <!-- Modernizr JS -->
 <script src="<?php echo base_url('js/user/vendor/modernizr-2.8.3.min.js'); ?>"></script>
+
+<script src="<?php echo base_url('css/select2/select2.min.css'); ?>"></script>

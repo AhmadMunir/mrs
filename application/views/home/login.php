@@ -17,23 +17,6 @@
         <?php $this->load->view('home/partial/header') ?>
         <!-- End of header area -->
         <!-- Start page content -->
-        <style>
-        /* centered columns styles */
-.row-centered {
-    text-align:center;
-}
-.col-centered {
-    display:inline-block;
-    float:none;
-    /* reset the text-align */
-    text-align:left;
-    /* inline-block space fix */
-    margin-right:-4px;
-    text-align: center;
-    background-color: #ccc;
-    border: 1px solid #ddd;
-}
-        </style>
         <section id="page-content" class="page-wrapper">
           <?php if ($this->session->flashdata('success')): ?>
             <div class="row row-centered">
@@ -78,14 +61,14 @@
                                             </div>
 
                                             <div class="col-sm-12">
-                                                <input type="text" class="form-control" name="email" placeholder="Your E-mail" id="email" onkeyup="checkEmail()" onchange="checkEmail()" required>
+                                                <input type="text" class="form-control" name="email" placeholder="Your E-mail" id="email" onkeyup="checkEmail()" required>
                                                 <p id="email_message" class="pesan-confirm"></p>
                                             </div>
                                           </div>
                                             <div class="row">
 
                                             <div class="col-sm-12">
-                                                <input type="text" class="form-control" name="username" placeholder="Your Username" id="username" onkeyup="checkUsername()" onchange="checkUsername()" required>
+                                                  <input type="text" class="form-control" name="username" placeholder="Your Username" id="username" onkeyup="checkUsername()" required>
                                                 <p id="username_message" class="pesan-confirm"></p>
                                             </div>
 
@@ -96,7 +79,7 @@
                                           </div>
                                             <div class="row">
                                             <div class="col-sm-6">
-                                              <input type="password" class="form-control" id="password" name="password" placeholder="Your Password" onkeyup="checkPass()" required>
+                                              <input type="password" class="form-control" id="password" name="password" placeholder="Your Password" required>
                                             </div>
                                             <div class="col-sm-6">
                                               <input type="password" class="form-control" id="repassword" name="repassword" placeholder="Your Password Again" onkeyup="checkPass()" required>

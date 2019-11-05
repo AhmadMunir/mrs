@@ -15,6 +15,7 @@ class M_registeruser extends CI_Model
 
     public function check($where, $table)
     {
+      $this->db->limit(1);
         return $this->db->get_where($table, $where);
     }
 

@@ -58,35 +58,36 @@ function checkEmail(){
     email.focus();
   }else {
     e_message.innerHTML = ""
-    // magic if
-    if (nama.value != ""
-        && email.value != ""
-        && username.value !=""
-        && phone.value !=""
-        && pass_1.value !=""
-        && pass_2.value !="") {
-          tombol.disabled = false;
-    }
-    // $.ajax({
-    //   type: "POST",
-    //   url: "http://localhost/merrys/user/login/checkEmailonDB",
-    //   data: {eml : email.value},
-    //   dataType: "json",
-    //   cache: false,
-    //   success: function(msg) {
-    //     if (msg.email == "T") {
-    //       tombol.disabled = true;
-    //       e_message.style.color = warnasalah;
-    //       e_message.innerHTML = "Email Is Already In Use By Another User, Try Another !";
-    //     }else {
-    //       // u_message.style.color = warnabenar;
-    //       e_message.innerHTML = "";
-    //     }
-    //   },
-    //   error: function(jqXHR, textStatus, errorThrown) {
-    //     e_message.innerHTML = "Error";
-    //   }
-    // });
+
+    $.ajax({
+      type: "POST",
+      url: "http://localhost/merrys/user/login/checkEmailonDB",
+      data: {eml : email.value},
+      dataType: "json",
+      cache: false,
+      success: function(msg) {
+        if (msg.email == "T") {
+          tombol.disabled = true;
+          e_message.style.color = warnasalah;
+          e_message.innerHTML = "Email Is Already In Use By Another User, Try Another !";
+        }else {
+          // u_message.style.color = warnabenar;
+          e_message.innerHTML = "";
+          // magic if
+          // if (nama.value != ""
+          //     && email.value != ""
+          //     && username.value !=""
+          //     && phone.value !=""
+          //     && pass_1.value !=""
+          //     && pass_2.value !="") {
+          //       tombol.disabled = false;
+          // }
+        }
+      },
+      error: function(jqXHR, textStatus, errorThrown) {
+        e_message.innerHTML = "Error";
+      }
+    });
   }
   }
 

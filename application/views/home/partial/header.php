@@ -56,13 +56,25 @@
                     <div class="header-top header-top-right">
                         <ul>
                             <li class="lh-50">
-                                <a href="#" class="pr-20 text-uppercase">account</a>
+                                <?php if ($this->session->userdata('status') =="login"){ ?>
+                                  <a href="#" class="pr-20 text-uppercase"><?php echo $this->session->nama ?></a>
+                                <?php }else { ?>
+                                  <a href="#" class="pr-20 text-uppercase">Account</a>
+                                <?php }?>
+
                                 <div class="header-top-down header-top-hover pl-15 lh-35">
                                     <ul>
-                                        <li><a href="login.html">Login</a></li>
+                                        <!-- <li><a href="login.html">Login</a></li> -->
+                                        <li>
+                                          <?php if ($this->session->userdata('status') =="login"){ ?>
+                                            <a href="<?php echo base_url('user/profile') ?>">My Account</a>
+                                          <?php }else { ?>
+                                            <a href="<?php echo base_url('user/login') ?>">Login</a>
+                                          <?php }?>
+                                        </li>
                                         <li><a href="compare.html">My bag</a></li>
                                         <li><a href="checkout.html">Checkout</a></li>
-                                        <li><a href="wishlist.html">Wishlist</a></li>
+                                        <li><a href="<?php echo base_url('user/login/logout') ?>">Log Out</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -144,7 +156,7 @@
                         <div class="col-md-12">
                             <nav id="primary-menu">
                                 <ul class="main-menu text-center">
-                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="<?php echo base_url('home') ?>">Home</a></li>
                                     <li><a href="about.html">About</a></li>
                                     <li><a href="shop-full.html">men</a></li>
                                     <li><a href="blog.html">Blog</a>
@@ -153,8 +165,11 @@
                                             <li><a href="blog-details.html">Blog Details</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="my-account.html">my Acoount</a></li>
-                                    <li><a href="<?php echo base_url('user/login'); ?>">Register</a></li>
+                                    <?php if ($this->session->userdata('status') =="login"){ ?>
+                                      <li><a href="<?php echo base_url('user/profile'); ?>">my Acoount</a></li>
+                                    <?php }else { ?>
+                                      <li><a href="<?php echo base_url('user/login'); ?>">Login or Register</a></li>
+                                    <?php }?>
                                     <li><a href="contact.html">Contact Us</a></li>
                                 </ul>
                             </nav>
