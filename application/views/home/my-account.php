@@ -18,13 +18,19 @@
         <!-- End of header area -->
         <!-- Start page content -->
         <section id="page-content" class="page-wrapper">
-          <!-- <?php //if ($this->session->flashdata('email')): ?>
-            <div class="row row-centered">
-            <div class="alert alert-warning col-md-6 col-centered" role="alert" a>
-              <?php// echo $this->session->flashdata('success');?>
-            </div>
-          </div>
-          <?php  //endif; ?> -->
+          <script type="text/javascript">
+            var notif = '<?=$this->session->flashdata('success')?>';
+            var url = '<?=base_url();?>'
+          </script>
+          <?php if ($this->session->flashdata('success')): ?>
+            <!-- <script>
+            $(document).ready(function () {
+                      Lobibox.notify('success', {
+                          msg: 'aaa'
+                      });
+                  });
+            </script> -->
+          <?php  endif; ?>
             <!-- Start Wishlist Area -->
             <div class="my-account-page section-padding">
               <div class="col-md-offset-5 col-centered">

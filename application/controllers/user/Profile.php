@@ -34,15 +34,11 @@
                      'dob' => $dob);
       $where = array('id_user' => $id);
 
-      $simpan = $this->M_profile->update($where, $data, 'tabel_user');
-       if ($simpan) {
-         echo "string";
-       }else {
-         echo "gagal";
-       }
+      $this->M_profile->update($where, $data, 'tabel_user');
+      $this->session->set_flashdata('success','success');
+      redirect('user/profile');
 
-
-    }
+          }
 
     public function saveaddress(){
       $id = $this->session->userdata('id');
