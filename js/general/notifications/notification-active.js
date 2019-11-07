@@ -4,7 +4,7 @@
 
       if (notif == 'success') {
         Lobibox.notify('success', {
-            img: url + 'img/banner01.jpg',
+            img: url + 'img/notif/centang.png',
             msg: 'Data Saved'
         });
       }

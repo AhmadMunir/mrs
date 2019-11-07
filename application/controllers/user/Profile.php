@@ -58,6 +58,8 @@
         'kode_pos' => $zip
       );
       $this->M_profile->update($where, $data, 'tabel_alamat');
+      $this->session->set_flashdata('success','success');
+      redirect('user/profile');
     }
   }
  ?>

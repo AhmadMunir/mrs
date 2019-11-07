@@ -1,6 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
-<button id="basicSuccess" class="btn btn-default">Default</button>
+<!-- <button id="basicSuccess" class="btn btn-default">Default</button> -->
 
 <head>
     <?php $this->load->view('home/partial/head') ?>
