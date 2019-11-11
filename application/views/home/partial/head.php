@@ -31,3 +31,5 @@
 <script src="<?php echo base_url('js/user/vendor/modernizr-2.8.3.min.js'); ?>"></script>
 
 <script src="<?php echo base_url('css/select2/select2.min.css'); ?>"></script>
+
+<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="69029b5e-e8f7-4649-b79c-9e8979ec68fe";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>

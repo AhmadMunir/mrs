@@ -12,7 +12,7 @@
 
 <!-- notification JS
 ============================================ -->
-<script src="<?php echo base_url() ?>js/general/notifications/Lobibox.js"></script>
+<script src="<?php echo base_url() ?>js/general/notifications/Notification.js"></script>
 <script src="<?php echo base_url() ?>js/general/notifications/notification-active.js"></script>
 
 <!-- select2 -->

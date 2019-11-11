@@ -1623,7 +1623,7 @@
                         <div class="col-md-3 col-sm-6">
                             <div class="text-white footer-about-us">
                                 <h4 class="pb-40 m-0 text-uppercase">about us</h4>
-                                <p>Lorem ipsum dolor sit amet, consecteir our adipisicing elit, sed do eiusmod tempor the incididunt ut labore et dolore magnaa liqua. Ut enim minimn.</p>
+                                <p>Merry's Collection stood since 2002, our founders Mariyanto and Hans have brought this vision to life and work to the needs of the leather lovers worldwide. We have a team of professionals from the beginning to make jackets, leather bags, leather shoes and suits etc.</p>
                                 <ul class="footer-social-icon">
                                     <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
                                     <li><a href="#"><i class="zmdi zmdi-instagram"></i></a></li>
