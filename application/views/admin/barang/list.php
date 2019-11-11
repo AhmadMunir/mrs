@@ -70,16 +70,16 @@
                                       <?php echo $barang->nama_barang ?>
                                     </td>
                                     <td width="150">
-                                      
+                                      <?php echo $barang->nama_kategori; ?>
                                     </td>
                                     <td width="150">
-                                      <img src="<?php echo base_url('upload/barang/'.$barang->gambar) ?>" style="width: 200px;height: 200px;" />
+                                      <img src="<?php echo base_url('upload/barang/'.$barang->gambar) ?>" style="width: 70px;height: 70px;" />
                                     </td>
                                     <td width="150">
                                       <?php echo $barang->harga ?>
                                     </td>
                                     <td width="150">
-                                      
+                                      <?php echo $barang->stok ?>                                     
                                     </td>
 
                                     <td width="150">

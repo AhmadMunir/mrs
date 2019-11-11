@@ -46,7 +46,7 @@
   			$this->session->set_flashdata('success','Berhasil Disimpan');
         redirect(site_url("admin/barang"));
   		}
-
+      $data["tabel_kategori"] =$barang->getKat();
   		$data["tabel_barang"] = $barang->getById($id);
   		if (!$data["tabel_barang"]) show_404();
 

@@ -5,12 +5,14 @@
 class Barang_model extends CI_Model
 {
 	private $_table = "tabel_barang";
+	private $_view  = "view_barang";
 
 	public $id_barang;
 	public $nama_barang;
 	public $id_kategori;
 	public $gambar;
 	public $harga;
+	public $stok;
 	
 
 	public function rules()
@@ -22,15 +24,18 @@ class Barang_model extends CI_Model
 		];
 	}
 
+	public function getKat(){
+		return $this->db->get('tabel_kategori')->result();
+	}
 	public function getAll()
 	{
 		$this->db->order_by('nama_barang', 'ASC');
-		return $this->db->get($this->_table)->result();
+		return $this->db->get($this->_view)->result();
 	}
 
 	public function getById($id)
 	{
-		return $this->db->get_where($this->_table, ["id_barang" => $id])->row();
+		return $this->db->get_where($this->_view, ["id_barang" => $id])->row();
 	}
 
 	
@@ -59,6 +64,7 @@ public function uploadGambar()
 		$this->id_kategori = $post["id_kategori"];
 		$this->gambar = $this->uploadGambar();
 		$this->harga = $post["harga"];
+		$this->stok = $post["stok"];
 		$this->db->insert($this->_table,$this);
 	}
 
@@ -70,12 +76,13 @@ public function uploadGambar()
 		$this->id_kategori = $post["id_kategori"];
 		
 		if(!empty($_FILES["gambar"]["name"])) {
-			$this->gambar = $this->_uploadImage();
+			$this->gambar = $this->uploadGambar();
 		}else{
 			$this->gambar = $post["old_image"];
 		}
 
 		$this->harga = $post["harga"];
+		$this->stok = $post["stok"];
 		
 		
 		$this->db->update($this->_table, $this, array('id_barang' => $post['id']));

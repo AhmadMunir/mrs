@@ -60,16 +60,15 @@
                             <div class="form-group">
                               <label for="harga">Gambar</label>
 
-                              <!-- <input class="form-control <?php echo form_error('gambar') ? 'is-invalid':'' ?>" type="file" name="gambar" placeholder="Gambar" />
+                              
+                              <input class="form-control <?php echo form_error('gambar') ? 'is-invalid':'' ?>" type="file" name="gambar">
                               <div class="invalid-feedback">
                                 <?php echo form_error('gambar')?>
-                              </div> -->
-                              <input type="file" name="gambar">
-
+                              </div>
                              <div class="form-group">
                               <label for="harga">Harga</label>
 
-                              <input class="form-control <?php echo form_error('harga') ? 'is-invalid':'' ?>" type="text" name="harga" placeholder="Harga" />
+                              <input class="form-control <?php echo form_error('harga') ? 'is-invalid':'' ?>" type="number" name="harga" placeholder="Harga" />
                               <div class="invalid-feedback">
                                 <?php echo form_error('harga')?>
                               </div>
@@ -77,7 +76,7 @@
                              <div class="form-group">
                               <label for="stok">Stok</label>
 
-                              <input class="form-control <?php echo form_error('stok') ? 'is-invalid':'' ?>" type="text" name="stok" placeholder="stok" />
+                              <input class="form-control <?php echo form_error('stok') ? 'is-invalid':'' ?>" type="number" name="stok" placeholder="stok" />
                               <div class="invalid-feedback">
                                 <?php echo form_error('stok')?>
                               </div>
